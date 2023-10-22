@@ -1,0 +1,100 @@
+.dashboard-section {
+    background-color: #021816;
+    background-color: #021018;
+    padding: 15px 0;
+}
+
+.col-md-4.navigation {
+    min-height: 400px;
+    background-color: #021816;
+}
+
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.navbar a,
+.navbar li {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar li:hover {
+    color: #30caa0;
+}
+
+.active {
+    color: #30caa0 !important;
+}
+
+.col-md-8.dashWrapper {
+    margin-top: 20px;
+}
+
+.col-md-4.totalCards {
+    border-radius: 50px;
+    padding-top: 15px;
+    max-width: 30%;
+    margin: 10px 14px;
+    background: #30caa0;
+    color: #fff;
+}
+
+.col-md-4.totalCards:hover {
+    cursor: pointer;
+    background: #29a986;
+}
+
+.col-md-4.totalCards h4 {
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.data h3 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 130px;
+}
+
+label {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.table td,
+.table th {
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.table th {
+    font-size: 21px;
+    font-weight: 900;
+    color: #ff892d;
+}
+
+.remove-btn {
+    color: #dc3545;
+}
+
+.remove-btn:hover {
+    color: #dc3546bd;
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+    .col-md-4.totalCards {
+        max-width: 100%;
+    }
+}

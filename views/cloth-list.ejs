@@ -1,0 +1,51 @@
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Org Price</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Type</th>
+            <th scope="col">Category</th>
+            <th scope="col">Color</th>
+            <th scope="col" class="text-center">Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if(cloth.length===0){ %>
+            <tr>
+                <td scope="row">No Cloth Found</td>
+            </tr>
+    </tbody>
+    <% } else { %>
+        <% for(let i=0; i< cloth.length; i++) { %>
+            <tr>
+                <td scope="row">
+                    <%=i+1 %>
+                </td>
+                <td scope="row">
+                    <%=cloth[i].cloth_name %>
+                </td>
+                <td scope="row">
+                    <%=cloth[i].original_price %>
+                </td>
+                <td scope="row">
+                    <%=cloth[i].discount_percent %>
+                </td>
+                <td scope="row">
+                    <%=cloth[i].cloth_type %>
+                </td>
+                <td scope="row">
+                    <%=cloth[i].category %>
+                </td>
+                <td scope="row">
+                    <%=cloth[i].cloth_color %>
+                </td>
+                <td scope="row" class="text-center"><a href="/delete-cloth/<%= cloth[i].id %>" class="remove-btn"><i
+                            class="fa-solid fa-trash"></i></a></td>
+            </tr>
+            <% } %>
+                </tbody>
+                <% } %>
+
+</table>

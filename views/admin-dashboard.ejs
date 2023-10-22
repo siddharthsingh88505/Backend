@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/jQuery.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+
+<body>
+    <!-- Dashboard section -->
+    <div class="container-fluid dashboard-section">
+        <div class="container">
+            <div class="row">
+                <!-- navigation -->
+                <div class="col-md-3 navigation">
+                    <div class="navbar">
+                        <ul>
+                            <a href="" class="active" id="dashboard">Dashboard</a>
+                            <li id="upload-page"><a href="/upload-page">Upload</a></li>
+                            <li id="all">All Cloth</li>
+                            <li id="basics">Basics</li>
+                            <li id="graphics">Graphics</li>
+                            <li id="florat">Florat</li>
+                            <li id="limited">Limited</li>
+                            <li id="orders">Orders</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- dashboard content -->
+                <div class="col-md-9 dashWrapper table-responsive table-hover" id="dashWrapper">
+                    <div class="row">
+                        <!-- all cloths -->
+                        <div class="col-md-4 totalCards all">
+                            <h4>All Cloths</h4>
+                            <div class="data">
+                                <h3>
+                                    <%= all %>
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- basic cloths -->
+                        <div class="col-md-4 totalCards basics">
+                            <h4>Basics</h4>
+                            <div class="data">
+                                <h3>
+                                    <%= basics %>
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- graphics -->
+                        <div class="col-md-4 totalCards graphics">
+                            <h4>Graphics</h4>
+                            <div class="data">
+                                <h3>
+                                    <%= graphics %>
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- florat -->
+                        <div class="col-md-4 totalCards florat">
+                            <h4>Florat</h4>
+                            <div class="data">
+                                <h3>
+                                    <%= florat %>
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- limited -->
+                        <div class="col-md-4 totalCards limited">
+                            <h4>Limited</h4>
+                            <div class="data">
+                                <h3>
+                                    <%= limited %>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/admin-dashboard.js"></script>
+</body>
+
+</html>
